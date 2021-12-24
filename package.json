@@ -1,0 +1,34 @@
+{
+  "devDependencies": {
+    "sass": "^1.45.0"
+  },
+  "name": "meet-landing-page",
+  "description": "![Design preview for the Meet landing page coding challenge](./preview.jpg)",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "anymatch": "^3.1.2",
+    "braces": "^3.0.2",
+    "binary-extensions": "^2.2.0",
+    "chokidar": "^3.5.2",
+    "fsevents": "^2.3.2",
+    "fill-range": "^7.0.1",
+    "glob-parent": "^5.1.2",
+    "immutable": "^4.0.0",
+    "is-binary-path": "^2.1.0",
+    "is-glob": "^4.0.3",
+    "is-extglob": "^2.1.1",
+    "is-number": "^7.0.0",
+    "normalize-path": "^3.0.0",
+    "picomatch": "^2.3.0",
+    "readdirp": "^3.6.0",
+    "source-map-js": "^1.0.1",
+    "to-regex-range": "^5.0.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile:sass": "sass starter-code/scss/main.scss starter-code/css/style.css -w"
+  },
+  "author": "",
+  "license": "ISC"
+}
