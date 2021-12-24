@@ -57,11 +57,15 @@
 
 .buttons {
   margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .btn-download {
   background-color: hsl(192, 37%, 48%);
-  margin-right: 10px;
+  margin: 20px 20px 0 0;
   font-size: 16px;
   font-weight: 700;
 }
@@ -111,6 +115,8 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 20px 5px;
   max-width: 1110px;
   margin: auto;
   margin-top: 60px;
@@ -221,6 +227,10 @@ footer p {
     display: flex;
     justify-content: flex-end;
   }
+  .hero-left,
+  .hero-right {
+    max-width: 100%;
+  }
   .hero-left {
     margin-right: 10px;
   }
@@ -276,5 +286,52 @@ footer p {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttons {
+    flex-direction: column;
+    min-height: 150px;
+    margin-top: 10px;
+  }
+  .btn-download {
+    margin: 1px 0 15px 0;
+  }
+  .images img {
+    max-width: 151px;
+  }
+  .group-header h1 {
+    font-size: 40px;
+  }
+  .group-header p {
+    max-width: 320px;
+  }
+  .number-and-line {
+    margin-top: 60px;
+  }
+  .smarter {
+    max-width: 327px;
+  }
+  .smarter h2 {
+    font-size: 32px;
+    max-width: 327px;
+  }
+  .smarter p:last-child {
+    font-size: 16px;
+    text-align: center;
+    font-weight: 400;
+    max-width: 314px;
+  }
+  .footer-container {
+    padding: 0 15px;
+  }
+  .footer-container h2 {
+    font-size: 32px;
+    margin-top: 10px;
+  }
+  .footer-container p {
+    font-size: 18px;
+    max-width: 327px;
   }
 }
