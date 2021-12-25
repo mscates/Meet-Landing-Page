@@ -65,7 +65,7 @@
 
 .btn-download {
   background-color: hsl(192, 37%, 48%);
-  margin: 20px 20px 0 0;
+  margin: 0 20px 0 0;
   font-size: 16px;
   font-weight: 700;
 }
@@ -214,36 +214,38 @@ footer p {
 .btn-download-footer:hover {
   background-color: hsl(268, 100%, 76%);
 }
+.img-tablet {
+  display: none;
+}
 
 @media (max-width: 1200px) {
+  .img-tablet {
+    display: block;
+    margin: 40px auto 0;
+    width: 109%;
+    max-width: 820px;
+  }
+  .img-tablet img {
+    width: 100%;
+    position: relative;
+    left: -25px;
+  }
+  footer {
+    background-image: url("../assets/tablet/image-footer.jpg");
+  }
   .header-container {
     flex-wrap: wrap;
     justify-content: center;
+    margin-top: 0;
   }
   .hero-left-container {
-    width: 50%;
-    order: 1;
-    align-items: center;
-    display: flex;
-    justify-content: flex-end;
-  }
-  .hero-left,
-  .hero-right {
-    max-width: 100%;
-  }
-  .hero-left {
-    margin-right: 10px;
+    display: none;
   }
 
   .hero-right-container {
-    width: 50%;
-    display: flex;
-    justify-content: flex-start;
-    order: 2;
+    display: none;
   }
-  .hero-right {
-    margin-left: 10px;
-  }
+
   .group-header {
     width: 100%;
     order: 3;
@@ -290,6 +292,12 @@ footer p {
 }
 
 @media (max-width: 500px) {
+  footer {
+    background-image: url("../assets/mobile/image-footer.jpg");
+  }
+  .img-tablet {
+    width: 115%;
+  }
   .buttons {
     flex-direction: column;
     min-height: 150px;

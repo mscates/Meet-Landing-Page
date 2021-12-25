@@ -27,7 +27,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "compile:sass": "sass starter-code/scss/main.scss starter-code/css/style.css -w"
+    "compile:sass": "sass scss/main.scss css/style.css -w"
   },
   "author": "",
   "license": "ISC"
