@@ -1,3 +1,20 @@
+// variables
+$dark: hsl(240, 21%, 20%);
+$light-gray: hsl(240, 10%, 57%);
+$green: hsl(192, 37%, 48%);
+$green-hover: hsl(192, 37%, 58%);
+$purple: hsl(268, 34%, 53%);
+$purple-hover: hsl(268, 34%, 63%);
+$light-green: hsl(192, 90%, 77%);
+$light-purple: hsl(268, 100%, 86%);
+$off-white: hsl(0, 0%, 98%);
+$pure-white: hsl(0, 0%, 100%);
+$number-border: hsla(240, 10%, 57%, 0.25);
+
+body {
+  background-color: $off-white;
+}
+
 .main-container {
   width: 100%;
   font-family: "Red Hat Display", sans-serif;
@@ -31,8 +48,9 @@
   text-align: center;
   font-size: 18px;
   line-height: 1.5;
-  color: hsl(240, 10%, 57%);
+  color: $light-gray;
   margin-top: 30px;
+  max-width: 430px;
 }
 .hero-left-container {
   align-self: flex-start;
@@ -48,9 +66,9 @@
 }
 .btn {
   text-decoration: none;
-  padding: 19px 46px;
+  padding: 19px 42px;
   border-radius: 40px;
-  color: hsl(0, 0%, 100%);
+  color: $pure-white;
   position: relative;
   z-index: 2;
 }
@@ -64,43 +82,44 @@
 }
 
 .btn-download {
-  background-color: hsl(192, 37%, 48%);
+  background-color: $green;
   margin: 0 20px 0 0;
   font-size: 16px;
   font-weight: 700;
 }
 .btn-download:hover {
-  background-color: hsl(192, 37%, 58%);
+  background-color: $green-hover;
 }
 .btn-download-footer {
-  background-color: hsl(268, 34%, 53%);
+  background-color: $purple;
 }
 .btn-download span {
-  color: hsl(192, 90%, 77%);
+  color: $light-green;
 }
 .btn-what {
-  background-color: hsl(268, 34%, 53%);
+  background-color: $purple;
   font-size: 16px;
   font-weight: 700;
+  padding: 19px 31px;
 }
 .btn-what:hover {
-  background-color: hsl(268, 34%, 63%);
+  background-color: $purple-hover;
 }
 
 .number {
-  border: 1px solid hsla(240, 10%, 57%, 0.25);
+  border: 1px solid $number-border;
   max-width: 56px;
   border-radius: 50%;
   padding: 17px 0;
   text-align: center;
   margin: auto;
-  color: hsl(240, 10%, 57%);
+  color: $light-gray;
   position: relative;
-  background-color: hsl(0, 0%, 100%);
+  background-color: $off-white;
   z-index: 2;
 }
 .number-top-line {
-  background-color: hsla(240, 10%, 57%, 0.25);
+  background-color: $number-border;
   width: 1px;
   height: 83px;
   margin: auto;
@@ -108,7 +127,7 @@
 
 .number-and-line {
   display: block;
-  margin-top: 115px;
+  margin-top: 55px;
 }
 
 .images {
@@ -116,7 +135,7 @@
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px 5px;
+  gap: 20px;
   max-width: 1110px;
   margin: auto;
   margin-top: 60px;
@@ -130,10 +149,10 @@
   max-width: 540px;
   text-align: center;
   margin: auto;
-  margin-top: 80px;
+  margin: 80px auto 30px;
 }
 .smarter p:first-child {
-  color: hsl(192, 37%, 48%);
+  color: $green;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: 700;
@@ -147,7 +166,7 @@
 }
 .smarter p:last-child {
   font-size: 18px;
-  color: hsl(240, 10%, 57%);
+  color: $light-gray;
   line-height: 1.4;
   max-width: 505px;
   margin: auto;
@@ -160,7 +179,7 @@ footer {
   background-size: cover;
   min-height: 308px;
   margin-top: 175px;
-  color: hsl(0, 0%, 100%);
+  color: $off-white;
   position: relative;
   display: flex;
   justify-content: center;
@@ -190,7 +209,7 @@ footer p {
   position: relative;
   font-size: 18px;
   z-index: 2;
-  max-width: 350px;
+  max-width: 340px;
   margin-right: 100px;
 }
 .number-line-footer {
@@ -204,7 +223,7 @@ footer p {
   align-items: center;
 }
 .footer-container span {
-  color: hsl(268, 100%, 86%);
+  color: $light-purple;
   margin-left: 3px;
 }
 .btn-download-footer {
@@ -212,7 +231,7 @@ footer p {
   font-weight: 700;
 }
 .btn-download-footer:hover {
-  background-color: hsl(268, 100%, 76%);
+  background-color: $purple-hover;
 }
 .img-tablet {
   display: none;
@@ -311,6 +330,7 @@ footer p {
   }
   .group-header h1 {
     font-size: 40px;
+    margin: 40px 0 0 0;
   }
   .group-header p {
     max-width: 320px;
