@@ -12,6 +12,7 @@ body,
 html {
   background-color: #fafafa;
   height: 100%;
+  overflow-x: hidden;
 }
 
 img {
@@ -31,10 +32,11 @@ h6 {
 
 .main-container {
   font-family: "Red Hat Display", sans-serif;
+  min-height: 100%;
 }
 
 .logo-container {
-  padding-top: 50px;
+  padding-top: 80px;
 }
 
 .logo-container img {
@@ -44,7 +46,7 @@ h6 {
 .header-container {
   display: flex;
   justify-content: space-between;
-  margin-top: 50px;
+  margin-top: 60px;
   min-height: 358px;
 }
 .header-container .hero-left {
@@ -123,7 +125,7 @@ h6 {
 
 .number-and-line {
   display: block;
-  margin-top: 55px;
+  margin-top: 100px;
 }
 .number-and-line .number {
   border: 1px solid rgba(134, 134, 156, 0.25);
@@ -186,6 +188,7 @@ h6 {
   max-width: 505px;
   margin: auto;
   margin-top: 30px;
+  font-weight: 400;
 }
 
 .number-line-footer {
@@ -292,6 +295,13 @@ footer::before {
 
   .group-header p {
     font-size: 16px;
+    font-weight: 400;
+    max-width: 440px;
+    margin-bottom: 10px;
+  }
+
+  .number-line-footer.number-and-line {
+    margin-top: 37px;
   }
 
   .images {
@@ -314,23 +324,23 @@ footer::before {
     background-image: url("../assets/tablet/image-footer.jpg");
     min-height: 428px;
   }
-  footer h2, footer p {
-    margin: 0;
-  }
-  footer h2 {
-    max-width: 457px;
-    text-align: center;
-    line-height: 1;
-  }
-  footer p {
-    max-width: 573px;
-    text-align: center;
-  }
 
   .footer-container {
     flex-direction: column;
     align-items: center;
     gap: 40px;
+  }
+  .footer-container h2, .footer-container p {
+    margin: 0;
+  }
+  .footer-container h2 {
+    max-width: 457px;
+    text-align: center;
+    line-height: 1;
+  }
+  .footer-container p {
+    max-width: 573px;
+    text-align: center;
   }
 }
 @media (max-width: 500px) {
@@ -339,6 +349,10 @@ footer::before {
   }
   .img-tablet img {
     left: -20px;
+  }
+
+  .number-line-footer.number-and-line {
+    margin-top: 37px;
   }
 
   .group-header h1 {
