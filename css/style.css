@@ -93,7 +93,7 @@ h6 {
 }
 
 .buttons {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -128,7 +128,7 @@ h6 {
 
 .number-and-line {
   display: block;
-  margin-top: 100px;
+  margin-top: 110px;
 }
 .number-and-line .number {
   border: 1px solid rgba(134, 134, 156, 0.25);
@@ -141,6 +141,7 @@ h6 {
   position: relative;
   background-color: #fafafa;
   z-index: 2;
+  font-weight: 700;
 }
 .number-and-line .number-top-line {
   background-color: rgba(134, 134, 156, 0.25);
@@ -157,7 +158,7 @@ h6 {
   gap: 20px;
   max-width: 1110px;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 50px;
 }
 .images img {
   max-width: 255px;

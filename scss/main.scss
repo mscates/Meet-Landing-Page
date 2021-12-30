@@ -125,7 +125,7 @@ h6 {
 }
 
 .buttons {
-  margin-top: 20px;
+  margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -160,7 +160,7 @@ h6 {
 // number and line
 .number-and-line {
   display: block;
-  margin-top: 100px;
+  margin-top: 110px;
   & .number {
     border: 1px solid $number-border;
     max-width: 56px;
@@ -172,6 +172,7 @@ h6 {
     position: relative;
     background-color: $off-white;
     z-index: 2;
+    font-weight: 700;
   }
   & .number-top-line {
     background-color: $number-border;
@@ -190,7 +191,7 @@ h6 {
   gap: 20px;
   max-width: 1110px;
   margin: auto;
-  margin-top: 60px;
+  margin-top: 50px;
   & img {
     max-width: 255px;
     border-radius: 10px;
