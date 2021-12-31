@@ -36,13 +36,9 @@ $number-border: hsla(240, 10%, 57%, 0.25);
   margin: 0;
 }
 
-html {
-  height: 100%;
-}
-
 body {
   background-color: $off-white;
-  height: 100%;
+  min-height: 100vh;
   overflow-x: hidden;
 }
 
@@ -66,6 +62,8 @@ h6 {
 .main-container {
   font-family: "Red Hat Display", sans-serif;
   min-height: 100%;
+  max-width: 1440px;
+  margin: auto;
 }
 
 // logo
